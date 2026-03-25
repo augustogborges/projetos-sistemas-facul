@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <form>
+        <div>
+            <label for="nome">
+                Nome:
+                    <input type="text" required>
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="nome">
+                Idade:
+                    <input type="number" required min="0" max="120">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="usuario">
+                Usuario: 
+                    <input type="text" required>
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="dataevento">Data do evento:</label>
+            <input type="datetime-local">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">
+                Telefone:
+                <input type="tel" required placeholder="(XX)XXXXX-XXXX">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">
+                Email:
+                <input type="email" required placeholder="email@gmail.com">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="peso">
+                Peso:
+                <input type="number" min="0" max="5000" step="0.25 ">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="volume">
+                Volume:
+                <input type="range" min="0" max="100" step="1">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Estado Cívil</legend>
+                <p>
+                    <label for="">
+                        <input type="radio" name="est_civil" value="Casado"> Casado
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <input type="radio" name="est_civil" value="Solteiro"> Solteiro
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <input type="radio" name="est_civil" value="Divorciado"> Divorciado
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+
+        <br>
+        <div>
+            <fieldset>
+                <legend>Produtos</legend>
+                <p>
+                    <label>
+                        <input type="checkbox" name="Computador" value="computador">Computador
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="impressora" value="impressora">Impressora
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="Monitor" value="Monitor">Monitor
+                    </label>
+                </p>
+            </fieldset>
+
+        </div>
+
+        <div>
+            <p>
+                <label> 
+                    Site: <input type="url" list="sites" name="link">
+                </label>
+            </p>
+            <datalist id="sites">
+                <option label="diolinux" value="https://plus.diolinux.com.br/t/quais-temas-do-visual-studio-code-voces-usam/15649"></option>
+
+                <option label="visualstudio" value="https://code.visualstudio.com/docs/setup/vscode-web#_extensions"></option>
+
+                <option label="Portal unipam" value="https://portal.unipam.edu.br/login"></option>
+            </datalist></div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+        <br>
+    </form>
+</body>
+
+</html>
