@@ -7,7 +7,9 @@ int main () {
     
     printf("Digite o sabor de sorvete: ");
         scanf("%c", &tipo);
-
+        
+    fflush(stdin);
+    
     printf("Digite a quantidade de bolas: ");
         scanf("%i", &quant);
     
@@ -23,4 +25,3 @@ int main () {
         printf("Não existe esse sorvete ");
     }
 }
-
